@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212;
+    color: #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+select,
+input[type="number"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+select:focus,
+input[type="number"]:focus,
+button:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+.divider {
+    margin: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.result-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result-section h2 {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.result-section p {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ccc;
+}
+
+.calculate-button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #ccc;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+    background-color: #398C40;
+}
+
+.credits {
+    background-color: #333;
+   /* Dark background color */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.credits p {
+    margin: 0;
+    color: #ccc;
+   /* Dimmed text color */
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.credits:hover {
+    background-color: #222;
+   /* Slightly darker background color on hover */
+}
+button:hover {
+    background-color: #3a3a3a;
+   /* Slightly darker background color on hover */
+}
+#settings-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.102);
+    overflow: auto;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 0px;
+    background-color: #212121;
+    color: #ccc;
+    z-index: 3;
+}
+
+#settings-window h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.settings-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #ccc;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.settings-button:hover {
+    background-color: #444;
+}
